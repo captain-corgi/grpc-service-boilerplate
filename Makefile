@@ -19,7 +19,7 @@ gen:
 	protoc -I . \
 		--go_out=. --go_opt=paths=source_relative \
 		--go-grpc_out=. --go-grpc_opt=paths=source_relative \
-		--grpc-gateway_out=api/user/ \
+		--grpc-gateway_out=api/auth/ \
 		--openapiv2_out=./ \
 		api/*/*.proto
 
